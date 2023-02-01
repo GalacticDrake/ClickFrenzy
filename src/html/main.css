@@ -1,0 +1,432 @@
+/* ============================ */
+    /* Main Section */
+/* ============================ */
+
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30);
+}
+
+html, body, div, span, p, a {
+    font-family: sans-serif;
+}
+
+footer {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px 0 20px 0;
+    border-top: solid 1px rgb(50, 50, 50);
+    margin: 0 10% 0 10%;
+}
+
+footer div {
+    padding-bottom: 10px;
+}
+
+    /* Navbar */
+
+    div.upper-div {
+        background-color: rgb(30, 30, 30);
+        padding: 0 1em;
+        display: flex;
+        align-items: center;
+    }
+
+    /* responsive */
+    .topnav {
+        overflow: hidden;
+        width: 1000px;
+        margin: 0 auto;
+        transition: 0.4s ease-in-out;
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 1em 0;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a.actual-links {
+        width: 20%;
+    }
+
+    .topnav a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    .topnav a.active {
+        color: rgb(44, 255, 213);
+    }
+
+    .topnav .icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav a:not(.active) {display: none;}
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .topnav.responsive a.actual-links {
+            width: 80%;
+            padding: 0.5em 0 0 0.5em;	
+        }
+        
+        .topnav.responsive a.actual-links:first-child {
+            padding-top: 1em;
+        }
+    }
+
+    /* main content */
+    .banner {
+        padding: 15px 0;
+        text-align: center;
+        color: #fff;
+        background-color: rgb(31, 169, 141);
+    }
+    
+    .banner:hover {
+        filter: brightness(0.9);
+    }
+    
+    .banner-link:link, .banner-link:visited  {
+        text-decoration: none;
+    }   
+    
+    .content {
+        max-width: 1000px;
+        margin: 100px auto 100px;
+        color: rgb(255, 255, 255);
+        padding: 0 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .expanded {
+        padding: 200px 1em;
+    }
+    
+    @media screen and (max-width: 600px) { 
+        .expanded {
+            padding: 50px 1em 0;
+        }
+    }
+
+    .header-enlarged {
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .subtitle-enlarged {
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: 1.5;
+    }
+
+    .desc-box {
+        margin: 50px 30px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .desc-container {
+        width: 40%;
+        position: relative;
+    }
+
+    .green-radial::before {
+        background: radial-gradient(circle closest-side, rgba(50, 193, 165, 0.2), transparent);
+        background-size: 100%;
+        content: "";
+        position: absolute;
+    }
+
+    .header-desc {
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+    .desc {
+        line-height: 1.5;
+        font-size: 1.2em;
+    }
+
+    .right {
+        flex-flow: row-reverse;
+    }
+    
+    /* size */
+    .gr-250::before {
+        width: 250px;
+        height: 250px;
+    }
+    
+    /* position */
+    .gr-70-n80::before {
+        left: 0;
+        right: 70%;
+        top: -80%;
+    }
+
+/* ============================ */
+    /* GameArea */
+/* ============================ */
+    .score-feature {
+	display: flex;
+	align-items: flex-start;
+        justify-content: center;
+    }
+
+    ﻿.score-cont {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .score-sect {
+        height: 20%;
+        width: 20%;
+        padding: 20px 20px;
+        text-align: center;
+        border-bottom: solid 3px transparent;
+        transition: 0.4s ease;
+    }
+
+    .score-header {
+        width: 100%;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 5px;
+    }
+
+    .enlarge {
+        font-size: 1.5em;
+    }
+    
+    #header-img {
+        margin: 0 auto; 
+        display: block; 
+        border: solid 2px rgb(50, 50, 50);
+        padding: 10px 0;
+        margin-bottom: 15px;
+    }
+
+/* ============================ */
+    /* Score System */
+/* ============================ */
+    
+    .feat-cont {
+	display: flex;
+	align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .feat-sect {
+        height: 15%;
+        width: 15%;
+        padding: 20px 20px;
+        text-align: center;
+        border-bottom: solid 3px transparent;
+        transition: 0.4s ease;
+    }
+    
+    .feat-sect-add {
+        width: 25%;
+    }
+
+    .feat-header {
+        width: 100%;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 5px;
+    }
+    
+    .feat-footer {
+        margin-top: 5px;
+        color: rgb(220, 220, 220);
+    }
+
+    /* Blocks */
+    .shape {
+        height: 40px;
+        width: 40px;
+        border: solid 2px rgb(70, 70, 70);
+        margin: 0 auto 10px;
+        transition: 0.4s;
+    }
+
+    /* Block Hovers */
+    .green:hover {
+        border-bottom-color: rgb(0, 229, 66);
+    }
+
+    .green:hover > .shape {
+        background-color: rgb(0, 229, 66);
+    }
+
+    .blue:hover {
+        border-bottom-color: rgb(0, 219, 229);
+    }
+
+    .blue:hover > .shape {
+        background-color: rgb(0, 219, 229);
+    }
+
+    .pink:hover {
+        border-bottom-color: rgb(242, 0, 231);
+    }
+
+    .pink:hover > .shape {
+        background-color: rgb(242, 0, 231);
+    }
+
+    .gold:hover {
+        border-bottom-color: rgb(229, 226, 0);
+    }
+
+    .gold:hover > .shape {
+        background-color: rgb(229, 226, 0);
+    }
+
+    .grey:hover {
+        border-bottom-color: rgb(110, 110, 110);
+    }
+
+    .grey:hover > .shape {
+        background-color: rgb(110, 110, 110);
+    }
+
+/* ============================ */
+    /* Frenzy */
+/* ============================ */
+
+    .meter {
+        margin-top: 10px;
+        height: 20px; 
+        position: relative;
+        background: #555;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+        padding: 5px;
+        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    }
+
+    .meter > span {
+        display: block;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: rgb(44, 255, 213);
+        background-image: linear-gradient(center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+        box-shadow: inset 0 2px 9px  rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .inner-meter {
+        width: 0%;
+        animation: expandWidth 50s linear infinite;
+    }
+
+    @keyframes expandWidth {
+       0% { width: 0; }
+       95% { width: 100%; background: #ffff00; }
+       100% { width: 100%; background: rgb(44, 255, 213); }
+    }
+
+    .note {
+        margin-top: 20px;
+        color: rgb(220, 220, 220);
+        font-style: italic;
+        text-align: center;
+    }
+    
+    .image-box {
+        margin-bottom: 10px;
+    }
+    
+    #midas-touch {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: solid 8px rgb(255, 255, 255);
+        margin: 17px auto 30px;
+        transition: 0.4s;
+    }
+    
+    #midas-touch:hover {
+        animation: midas 4s linear infinite;
+    }
+    
+    @keyframes midas {
+        0% { border-color: rgb(255, 255, 255); }
+       40% { border-color: rgb(255, 255, 0); }
+       60% { border-color: rgb(255, 255, 0); } 
+       100% { border-color: rgb(255, 255, 255); }
+    }
+    
+/* ============================ */
+    /* Credits */
+/* ============================ */
+
+    .credit-subtitle {
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    .sub-content {
+        text-align: center;
+        margin-bottom: 40px;
+        line-height: 1.5;
+    }
+
+    .sub-content:last-child {
+        margin-bottom: 0px;
+    }
+
+    .italic-grey {
+        font-style: italic;
+        color: rgb(210, 210, 210);
+    }
+
+    .credit-link {
+        color: rgb(255, 255, 255);
+    }
+
+    .text {
+        color: rgb(230, 230, 230);
+    }

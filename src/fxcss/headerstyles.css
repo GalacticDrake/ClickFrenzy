@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Jan 2021, 11:56:57
+    Author     : thefl
+*/
+
+.header-container {
+    /* -fx-padding: 2em 4em; */
+    -fx-background-color: rgb(30, 30, 30);
+}
+
+.header-text {
+    -fx-fill: rgb(230, 230, 230);
+    -fx-font-size: 1.4em;
+    -fx-font-weight: 800;
+}
+
+.backbtn {
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-font-size: 1.4em;
+    -fx-background-color: rgb(30, 30, 30);
+    -fx-border-width: 1px;
+    -fx-padding: 1em 2em;
+}
+
+.backbtn:hover {
+    -fx-cursor: hand;
+}
+
+.custom-progress-bar > .track {
+    -fx-text-box-border: rgb(50, 50, 50);
+    -fx-control-inner-background: rgb(30, 30, 30);
+}
+
+.custom-progress-bar-2 {
+    -fx-accent: rgb(255, 255, 255); 
+}
+
+.custom-progress-bar-2 > .track {
+    -fx-text-box-border: rgb(50, 50, 50);
+    -fx-text-box-width: 1px;
+    -fx-control-inner-background: rgb(70, 70, 70);
+}

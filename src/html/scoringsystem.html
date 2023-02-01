@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Scoring System</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="upper-div">		
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="actual-links">Gameplay</a>
+            <a href="gamearea.html" class="actual-links" >Gamearea</a>
+            <a class="active actual-links">Scoring System</a>
+            <a href="frenzymeter.html" class="actual-links">Frenzy Meter</a>
+            <a href="abilities.html" class="actual-links">Abilities</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>	
+    </div>
+	
+    <section class="content">
+        <div class="header-enlarged">Block Rarity</div>
+        <div class="subtitle-enlarged">
+                <div>Each block may contain 1 out of the 5 colours available. The colour, the associated rarity and score are listed below.</div> 
+                <div>Avoid the grey blocks!</div>
+        </div>
+
+        <div class="feat-cont">
+            <div class="feat-sect green">
+                <div class="shape"></div>
+                <div class="feat-header">Green</div>
+                <div>Rarity: 0.385</div>
+                <div class="feat-footer">Weight: +1</div>
+            </div>
+            <div class="feat-sect blue">
+                <div class="shape"></div>
+                <div class="feat-header">Blue</div>
+                <div>Rarity: 0.231</div>
+                <div class="feat-footer">Weight: +2</div>
+            </div>
+            <div class="feat-sect pink">
+                <div class="shape"></div>
+                <div class="feat-header">Pink</div>
+                <div>Rarity: 0.146</div>
+                <div class="feat-footer">Weight: +3</div>
+            </div>
+            <div class="feat-sect gold">
+                <div class="shape"></div>
+                <div class="feat-header">Gold</div>
+                <div>Rarity: 0.015</div>
+                <div class="feat-footer">Weight: +5</div>
+            </div>
+            <div class="feat-sect grey">
+                <div class="shape"></div>
+                <div class="feat-header">Grey</div>
+                <div>Rarity: 0.385</div>
+                <div class="feat-footer">Weight: -4</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">	
+        <div class="header-enlarged">Boundaries</div>
+        <div class="subtitle-enlarged">Try beating the bounds and earn more credits to upgrade.</div>
+
+        <div class="feat-cont">
+                <div class="feat-sect">
+                        <div class="feat-header enlarge">0</div>
+                        <div>Credits: 10</div>
+                </div>
+                <div class="feat-sect">
+                        <div class="feat-header enlarge">1 K</div>
+                        <div>Credits: 20</div>			
+                </div>
+                <div class="feat-sect">
+                        <div class="feat-header enlarge">5 K</div>
+                        <div>Credits: 30</div>			
+                </div>
+                <div class="feat-sect">
+                        <div class="feat-header enlarge">20 K</div>
+                        <div>Credits: 40</div>			
+                </div>
+                <div class="feat-sect">
+                        <div class="feat-header enlarge">50 K</div>
+                        <div>Credits: 50</div>
+                </div>
+                <div class="feat-sect">
+                        <div class="feat-header enlarge">100 K</div>
+                        <div>Credits: 60</div>
+                </div>
+                <div class="feat-sect">
+                        <div class="feat-header enlarge">500 K</div>
+                        <div>Credits: 70</div>
+                </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div><a class="banner-link credit-link" href="credits.html">Credits</a></div>
+    </footer>
+	
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+</body>
+
+</html>

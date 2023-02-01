@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Jan 2021, 12:01:34
+    Author     : thefl
+*/
+
+.container {
+    -fx-background-color: rgb(50, 50, 50);
+}
+
+.inner-container {
+    -fx-padding: 20px 50px; 
+}
+
+.opt-heading {
+    -fx-fill: rgb(230, 230, 230);
+    -fx-font-size: 1.2em;
+    -fx-font-weight: 800;
+}
+
+.prompt-heading {
+    -fx-font-size: 1.4em;
+}
+
+.prompt-desc {
+    -fx-font-size: 1.2em;
+    -fx-fill: rgb(210, 210, 210);
+}
+
+.promptbtn {
+    -fx-padding: 15px 0 0 0;
+}
+
+.confirmbtn {
+    -fx-font-size: 1.2em;
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-font-weight: 800;
+    -fx-background-color: rgb(50, 50, 50);
+    -fx-padding: 10px 20px 10px 20px;
+}
+
+.confirmbtn:hover {
+    -fx-cursor: hand;
+    -fx-background-color: rgb(60, 60, 60);
+}
+
+.resetbtn {
+    -fx-padding: 5px 20px 5px 20px;
+    -fx-font-size: 1.2em;
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-background-color: rgb(50, 50, 50);
+    -fx-border-color: rgb(90, 90, 90);
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.resetbtn:hover {
+    -fx-background-color: rgb(60, 60, 60);
+    -fx-border-color: rgb(100, 100, 100);
+    -fx-cursor: hand;
+}

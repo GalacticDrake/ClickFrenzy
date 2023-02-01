@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Frenzy Meter</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="upper-div">		
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="actual-links">Gameplay</a>
+            <a href="gamearea.html" class="actual-links" >Gamearea</a>
+            <a href="scoringsystem.html" class="actual-links">Scoring System</a>
+            <a class="active actual-links">Frenzy Meter</a>
+            <a href="abilities.html" class="actual-links">Abilities</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>	
+    </div>
+	
+    <section class="content">
+        <div class="header-enlarged">Frenzy Meter</div>
+        <div class="subtitle-enlarged">
+            <div>The frenzy meter starts empty. As you click on blocks, it gets filled up, and maxes out at 50 before resetting.</div> 
+            <div class="meter">
+                <span class="inner-meter" id="fr-meter"></span>
+            </div>
+        </div>
+
+        <div>The frenzy meter activates one of the following skills:</div>
+        <div class="feat-cont">
+            <div class="feat-sect feat-sect-add">
+                <div class="image-box">
+                   <img src="images/Multiplier.gif" alt="image-multiplier"/> 
+                </div>
+                <div class="feat-header">x2 Multiplier</div>
+                <div class="feat-desc">Doubles your score</div>
+                <div class="feat-footer">Duration: 10 seconds</div>
+                <div class="feat-footer">Rarity: 0.800</div>
+            </div>
+            <div class="feat-sect feat-sect-add">
+                <div class="image-box">
+                    <div id="midas-touch"></div>
+                </div>
+                <div class="feat-header">Touch of Midas</div>
+                <div class="feat-desc">Turns all into gold, doubles score</div>
+                <div class="feat-footer">Duration: 5 seconds</div>
+                <div class="feat-footer">Rarity: 0.195</div>			
+            </div>
+            <div class="feat-sect feat-sect-add">
+                <div class="image-box">
+                    <img src="images/purge.gif" alt="image-purge"/> 
+                </div>
+                <div class="feat-header">Purge</div>
+                <div class="feat-desc">Purge everything!!! with x5 score</div>
+                <div class="feat-footer">Duration: instant</div>
+                <div class="feat-footer">Rarity: 0.005</div>			
+            </div>
+        </div>
+
+        <div class="note">Note: while a skill is running, you cannot activate the meter even if it is full</div>
+
+    </section>
+    
+    <footer>
+        <div><a class="banner-link credit-link" href="credits.html">Credits</a></div>
+    </footer>
+	
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+</body>
+
+</html>

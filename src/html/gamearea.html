@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Gamearea</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="upper-div">		
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="actual-links">Gameplay</a>
+            <a class="active actual-links">Gamearea</a>
+            <a href="scoringsystem.html" class="actual-links">Scoring System</a>
+            <a href="frenzymeter.html" class="actual-links">Frenzy Meter</a>
+            <a href="abilities.html" class="actual-links">Abilities</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>	
+    </div>
+	
+	<section class="content expanded">
+		<div class="desc-box">
+			<div class="desc-container">
+				<div class="header-desc">Gamearea</div>
+				<div class="desc">Simply click on the blocks to score!</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="content">		
+		<div>
+			<div class="feat-header header-enlarged">Scoreboard</div>
+			<div class="subtitle-enlarged">The scoreboard area consists of the following:</div>
+                        <img id="header-img" src="images/scoreboard.png" alt="image-scoreboard"/>
+		</div>
+		
+		<div class="score-feature">
+			<div class="score-sect"> 
+                            <img src="images/Multiplier.gif" alt="image-multiplier" width="80"/>
+                            <div class="score-header">[1] User Multiplier</div>
+                            <div>Multiplies your current score</div>
+			</div>
+			<div class="score-sect"> 
+                            <img src="images/Timer.gif" alt="image-timer" width="80"/>
+                            <div class="score-header">[2] Timer</div>
+                            <div>Challenge your speed</div>
+			</div>
+			<div class="score-sect"> 
+                            <img src="images/Score.gif" alt="image-score" width="80"/>
+                            <div class="score-header">[3] Score</div>
+                            <div>Counts your score</div>
+			</div>
+			<div class="score-sect"> 
+                            <img src="images/Meter.gif" alt="image-meter" width="80"/>
+                            <div class="score-header">[4] Frenzy Meter</div>
+                            <div>Activate for skills!</div>
+			</div>	
+		</div>
+
+	</section>
+    
+    <footer>
+        <div class="italic-grey">
+            Images are designed by Keith Ong Joon Kit.
+        </div>
+        <div><a class="banner-link credit-link" href="credits.html">Credits</a></div>
+    </footer>
+	
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+</body>
+
+</html>

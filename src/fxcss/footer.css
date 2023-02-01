@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Jan 2021, 13:07:05
+    Author     : thefl
+*/
+
+.container {
+    -fx-padding: 10px 40px 5px 40px;
+    -fx-background-color: rgb(40, 40, 40);
+}
+
+.ab-title {
+    -fx-fill: rgb(255, 255, 255);
+    -fx-font-size: 1.2em;
+    -fx-padding-top: 5px;
+}
+
+.ab-desc {
+    -fx-fill: rgb(255, 255, 255);
+    -fx-font-size: 1em;
+}

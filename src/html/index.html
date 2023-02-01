@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Gameplay</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="upper-div">		
+        <div class="topnav" id="myTopnav">
+            <a class="active actual-links">Gameplay</a>
+            <a href="gamearea.html" class="actual-links">Gamearea</a>
+            <a href="scoringsystem.html" class="actual-links">Scoring System</a>
+            <a href="frenzymeter.html" class="actual-links">Frenzy Meter</a>
+            <a href="abilities.html" class="actual-links">Abilities</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>	
+    </div>
+	
+    <section class="content expanded">
+        <div class="desc-box">
+            <div class="desc-container green-radial gr-250 gr-70-n80">
+                    <div class="header-desc">ClickFrenzy</div>
+                    <div class="desc">Click to relieve your stress, or challenge your friends in a clicking frenzy!</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="desc-box">
+            <div class="desc-container">
+                <div class="header-desc">Spectacular scores</div>
+                <div class="desc">Click as many blocks as you can, trying to hit a score as high as possible.</div>
+            </div>
+        </div>
+        <div class="desc-box right">
+            <div class="desc-container">
+                <div class="header-desc">Challenge your friends</div>
+                <div class="desc">Challenge your friends to see who can click the fastest, most accurate and be the smartest in managing blocks.</div>
+            </div>
+        </div>
+        <div class="desc-box">
+            <div class="desc-container">
+                <div class="header-desc">The sky's the limit</div>
+                <div class="desc">Unlock abilities to help you hit boundaries, and raise your scores.</div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div><a class="banner-link credit-link" href="credits.html">Credits</a></div>
+    </footer>
+    
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Jan 2021, 13:44:35
+    Author     : thefl
+*/
+
+.label {
+    -fx-text-fill: rgb(230, 230, 230);
+    -fx-font-size: 1.2em; 
+}
+
+.data {
+    -fx-fill: rgb(255, 255, 255);
+    -fx-font-size: 1.2em; 
+}
